@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <title>PetShop - Escolha o serviço</title>
+</head>
+<body>
+
+    <h2>Escolha o serviço que você deseja agendar ao seu Pet</h2>
+
+    <div class="container-main contact-wrapper animated bounceInUp">
+   
+        <div class="container-pet" id="selectPet">     
+            <p class="pAnimal">Escolha o animal:</p>
+            <select id="pet" name="pet" onchange="popularSelectsServico(this.id,'servico')">
+                <option selected disabled></option>
+                <option value="cachorro">Cachorro</option>
+                <option value="gato">Gato</option>
+            </select>
+        </div>
+        <div class="container-servico" id="selectServico">
+            <p class="pServico">Escolha o serviço:</p>
+            <select id="servico" name="servico" onchange="popularSelectsHorario(this.id,'horarioServico')"></select>
+         </div>
+        <div class="container-horario" id="selectHorario">
+            <p class="pHorario">Escolha o horário:</p>
+            <select id="horarioServico" name="horarioServico"></select>
+        </div>
+        <div class="container-data" id="inputBtn">
+            <p class="pData">Escolha a data:</p>
+            <input type="date" id="dateInput">
+        </div>
+
+        <div class="container-btn">
+            <input  id="btn" class="btn" type="button" value="Agendar" onclick="validaAgendamento()">
+            <input  id="btn" class="btn" type="button" value="Sair" onclick="sair()">
+            <input  id="btn" class="btn" type="button" value="Consultar" onclick="consulta()">
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
