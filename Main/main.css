@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body{
+    background-image: url(../img/wave.png);
+    background-repeat: no-repeat;
+    background-color: rgb(242, 242, 242);
+    
+}
+h2{
+    text-align: center;
+    margin: 50px auto;
+    height: 40px;
+    color: white;
+    background-color: #38d39f;
+}
+
+.wave{
+    position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+    z-index: -1;
+    
+}
+
+.container-main{    
+    text-align: center;
+    background-color: #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 6px;
+}
+
+
+.btn {
+    font-family: 'Poppins', sans-serif;
+    background: #38d39f;
+    border-radius: 5px;
+    height: 0;
+    line-height: 0;
+    color: black;
+    width: 150px;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 30px;
+    border: solid black 1px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    margin: 50px 0;
+    transition: all 0.6s ease;
+}
+ 
+.btn:hover {
+    border-radius: 8px;
+    border: solid black 1px;
+    text-decoration: none;
+    background: #38d39f;
+    color: white;
+    box-shadow: 1px 1px 20px 0 #000000;
+    text-shadow: 1px 1px 20px #000000;
+
+}
+
+.pAnimal{
+    margin: 10px 0;
+}
+
+.pServico{
+    
+    margin: 10px 0;
+}
+
+.pHorario{
+
+    margin: 10px 0;
+}
+
+.pData{
+
+    margin: 10px 0;
+}
