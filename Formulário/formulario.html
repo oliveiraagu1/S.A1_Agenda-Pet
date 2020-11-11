@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/formulario.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <title>PetShop - Formulário</title>
+</head>
+<body onload="apresentarDados()">
+
+    <h2>Tabela de dados cadastrados</h2>
+
+    <div class="container contact-wrapper animated bounceInUp">
+        <table id="tabelaDados" class="content-table">
+            
+            <thead>
+                <tr>
+                    <th>ID:</th>
+                    <th>Pet:</th>
+                    <th>Nome Cliente:</th>
+                    <th>Serviço:</th>
+                    <th>Horário:</th>
+                    <th>Data:</th>
+                    <th>Valor:</th>
+                </tr>
+            </thead>
+       </table>
+    </div>
+    <div class="middle contact-wrapper animated bounceInUp">
+        <input type="number" placeholder="Digite aqui o ID que deseja deletar!" id="numeroUsuario" class="inputNumeroUsuario" required>
+        <div class="divBotoes">
+            <a class="btn btn1" id="inputVoltar" onclick="voltarPagina()">Voltar</a>
+            <a class="btn btn2" onclick="deletarDados()">Deletar</a>
+        </div>
+        <div class="btnContato">
+            <a class="buttonContact" onclick="paginaContato()">Contato</a>
+        </div>
+    </div>
+    
+
+      
+
+
+    <script src="js/formulario.js"></script>
+</body>
+</html>
